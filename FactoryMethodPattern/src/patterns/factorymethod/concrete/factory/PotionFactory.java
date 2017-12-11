@@ -1,7 +1,6 @@
 package patterns.factorymethod.concrete.factory;
 
 import patterns.factorymethod.Item;
-import patterns.factorymethod.ItemFactory;
 import patterns.factorymethod.concrete.item.HealthPotion;
 import patterns.factorymethod.concrete.item.ManaPotion;
 
@@ -13,8 +12,7 @@ import patterns.factorymethod.concrete.item.ManaPotion;
  * @author gwlee
  * @see ItemFactory
  */
-public class PotionFactory implements ItemFactory {
-	@Override
+public class PotionFactory{
 	public Item createItem(String type) {
 		switch (type) {
 		case "HealthPotion":
